@@ -7,7 +7,7 @@ using namespace std;
 int game(int maxnum){
 
     int randonNum = rand() % maxnum + 1;
-    int guessCount;
+    int guessCount = 0;
     int guess;
 
     while(1){
@@ -31,6 +31,7 @@ int game(int maxnum){
 
 int main()
 {
+    srand(time(0));
     int max;
     cout << "Give maximum number:" << endl;
     cin >> max;
